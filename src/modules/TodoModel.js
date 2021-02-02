@@ -2,7 +2,7 @@ class TodoModel {
   constructor() {}
 
   getTodoList() {
-    return JSON.parse(localStorage.getItem('todoList'));
+    return JSON.parse(localStorage.getItem('todoList')) || [];
   }
 
   setTodoList(todoList) {
